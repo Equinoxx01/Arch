@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA Pickleball Club</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="#home" class="logo">AAA</a>
+    <div class="nav-links">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact Us</a>
+      <a href="#reserve" class="btn-reserve">RESERVE A COURT</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <section id="home" class="section-block">
+      <div class="diagram-card">
+        <div class="diagram-header">
+          <h3>Interactive Court View</h3>
+          <span class="badge">AAA Pickleball Court Layout</span>
+        </div>
+
+        <div class="diagram">
+          <div class="cell top-left"><span class="cell-label">Court A1</span></div>
+          <div class="cell top-middle-left"><span class="cell-label">Court A2</span></div>
+          <div class="cell top-middle-right"><span class="cell-label">Court B1</span></div>
+          <div class="cell top-right"><span class="cell-label">Court B2</span></div>
+
+          <div class="blue-left"><span class="cell-label">Kitchen West</span></div>
+          <div class="blue-right"><span class="cell-label">Kitchen East</span></div>
+
+          <div class="cell bottom-left"><span class="cell-label">Court C1</span></div>
+          <div class="cell bottom-middle-left"><span class="cell-label">Court C2</span></div>
+          <div class="cell bottom-middle-right"><span class="cell-label">Court D1</span></div>
+          <div class="cell bottom-right"><span class="cell-label">Court D2</span></div>
+
+          <div class="aisle"></div>
+        </div>
+      </div>
+
+      <div class="content">
+        <h2>Good games start with a place to play</h2>
+        <p>
+          AAA Pickleball brings players together on pristine, high-performance courts. 
+          Whether you are practicing drills or playing with friends, there is always a reason to make time for a game.
+        </p>
+        <a href="#about" class="button">Learn More</a>
+      </div>
+    </section>
+
+    <section id="about" class="section-block">
+      <div class="about-hero">
+        <div>
+          <span class="sub-heading">About AAA Pickle Ball</span>
+          <h2>Good games start with a place to play.</h2>
+        </div>
+        <div>
+          <p>
+            AAA is about bringing people together on the court. Whether you are practicing your skills or playing with friends, there is always a reason to make time for a game.
+          </p>
+          <p style="margin-top: 12px;">
+            Bring your team, enjoy the competition, and make every game a chance to connect.
+          </p>
+          <a href="#home" class="back-link">&larr; Back to home</a>
+        </div>
+      </div>
+
+      <div class="values-banner">
+        <div class="banner-header">
+          <h3>More than a game</h3>
+          <p>What matters when we step onto the court:</p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <h4>Play together.</h4>
+            <p>Share the court and enjoy time with your team.</p>
+          </div>
+
+          <div class="value-card">
+            <h4>Keep Improving.</h4>
+            <p>Make room for practice, learning, and a new challenge.</p>
+          </div>
+
+          <div class="value-card">
+            <h4>Respect the game.</h4>
+            <p>Play fair and support the people around you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-block">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <h2>Contact us</h2>
+          <span class="sub-title">Your next game starts here.</span>
+          <p style="margin-bottom: 24px; color: #64748b;">
+            Ask about reserving a court, planning a game with friends, or getting to know AAA Pickle Ball.
+          </p>
+
+          <div class="info-group">
+            <label>Email</label>
+            <div class="val">hello@example.com</div>
+            <span class="placeholder-tag">Placeholder</span>
+          </div>
+
+          <div class="info-group">
+            <label>Phone</label>
+            <div class="val">Add your phone number</div>
+            <span class="placeholder-tag">Placeholder</span>
+          </div>
+
+          <div class="info-group">
+            <label>Find the court</label>
+            <div class="val">Add your court address</div>
+            <span class="placeholder-tag">Placeholder</span>
+          </div>
+
+          <p class="small-note">
+            Planning a visit? Include your preferred date, time, and number of players in your message. A reservation is only confirmed once the team replies.
+          </p>
+        </div>
+
+        <div class="contact-form-card">
+          <h3>Leave a message</h3>
+          <p class="form-desc">Form preview: sending is unavailable until a contact service is connected.</p>
+
+          <form onsubmit="event.preventDefault();">
+            <div class="form-group">
+              <label>Your name (required)</label>
+              <input type="text" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label>Email address (required)</label>
+              <input type="email" placeholder="john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label>What can we help with?</label>
+              <select>
+                <option>General question</option>
+                <option>Court reservation inquiry</option>
+                <option>Event or tournament</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Your message (required)</label>
+              <textarea rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-send">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="reserve" class="section-block"></section>
+
+  </main>
+
+  <script>
+    const sections = document.querySelectorAll('.section-block');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= (sectionTop - 120)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
